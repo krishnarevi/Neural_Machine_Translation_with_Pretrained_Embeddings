@@ -107,12 +107,13 @@ Actual output : c est un garcon intelligent
 
 When we cross check predictions made by both models , predictions are not completely random . Both models give decent predictions . Still model without glove embeddings are giving more accurate translations compared to the other.
 
-#### Why performance not improving ??
+#### Why performance not improving ?
 
 Pre-trained word embeddings have proven to be highly useful in neural network models for NLP tasks such as [sequence tagging](https://arxiv.org/abs/1409.0473) (Lample et al., 2016; Ma and Hovy, 2016) and [text classification](https://arxiv.org/abs/1408.5882) (Kim, 2014). However, it is much less common to use such pre-training in [NMT](https://arxiv.org/abs/1609.08144) (Wu et al., 2016), largely because the large-scale training corpora used for tasks such as WMT2 tend to be several orders of magnitude larger than the annotated data available for other tasks, such as the [Penn Treebank](https://www.researchgate.net/publication/220017637_Building_a_Large_Annotated_Corpus_of_English_The_Penn_Treebank) (Marcus et al., 1993).
 
 In [this](https://arxiv.org/pdf/1804.06323.pdf) paper they conduct a set of experiments, where they examine the efficacy of pre-trained word embeddings across the various languages in their corpus. Their conclusions have practical effects on the recommendations for when and why pretrained embeddings may be effective in NMT, particularly in low-resource scenarios: (1) there is a sweet-spot where word embeddings are most effective, where there is very little training data but not so little that the system cannot be trained at all, (2) pre-trained embeddings seem to be more effective for more similar translation pairs, (3) a priori alignment of embeddings may not be necessary in bilingual scenarios, but is helpful in multi-lingual training scenarios.
 
-refer to code file without GloVe embeddings [here](https://github.com/krishnarevi/TSAI_END2.0_Session10/blob/main/Frech_to_English_NMT_without_pretrained_embedding.ipynb)
+refer to code file without GloVe embeddings [here](https://github.com/krishnarevi/Neural_Machine_Translation_with_Pretrained_Embeddings/blob/main/Frech_to_English_NMT_without_pretrained_embedding.ipynb)
 
-Please refer to code file with GloVe embeddings [here](https://github.com/krishnarevi/TSAI_END2.0_Session10/blob/main/Frech_to_English_NMT_with_pretrained_embedding%20(2).ipynb)
+refer to code file with GloVe embeddings [here](https://github.com/krishnarevi/Neural_Machine_Translation_with_Pretrained_Embeddings/blob/main/Frech_to_English_NMT_with_pretrained_embedding%20(2).ipynb)
+
